@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace eTicketApp.Models
 {
-    public class Actor
+    public class Cinema
     {
         [Key]
         public int Id { get; set; }
-        public string ProfilePictureURL { get; set; }
-        public string FullName { get; set; }
-        public string Bio { get; set; }
+        public string CinemaLogo { get; set; }
+        public string CinemaName { get; set; }
+        public string Description { get; set; }
     }
 }
