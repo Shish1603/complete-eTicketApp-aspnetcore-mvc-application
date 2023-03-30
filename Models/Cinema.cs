@@ -13,5 +13,7 @@ namespace eTicketApp.Models
         public string CinemaLogo { get; set; }
         public string CinemaName { get; set; }
         public string Description { get; set; }
+        //Relationship
+        public List<Movie> Movies { get; set; }
     }
 }
