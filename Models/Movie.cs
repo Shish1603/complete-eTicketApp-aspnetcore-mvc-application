@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using eTicketApp.Data;
@@ -18,6 +19,18 @@ namespace eTicketApp.Models
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
+        //Relationships
+        public List<Actors_Movies> Actors_Movies { get; set; }
+        //Cinema
+        public int CinemaId { get; set; }
+        [ForeignKey("CinemaId")]
+        public Cinema Cinema { get; set; }
+        //Cinema
+        public int ProducerId { get; set; }
+        [ForeignKey("ProducerId")]
+        public Producer Producer { get; set; }
+
+
 
     }
 }
