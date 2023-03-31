@@ -12,10 +12,16 @@ namespace eTicketApp.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [Display(Name="Name")]
         public string Name { get; set; }
         public DateTime EndDate { get; set; }
         public double Price { get; set; }
+
+        [Display(Name = "Image")]
         public string ImageURL { get; set; }
+
+        [Display(Name = "Description")]
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
