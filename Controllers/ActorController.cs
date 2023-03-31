@@ -21,7 +21,6 @@ namespace eTicketApp.Controllers
         {
             var allActors = await _context.Actors.ToListAsync();
             return View(allActors);
-
         }
     }
 }
