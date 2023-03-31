@@ -31,6 +31,5 @@ namespace eTicketApp.Controllers
         //    var allProducers = _context.Producers.ToList();
         //    return View();
         //}
-
     }
 }
