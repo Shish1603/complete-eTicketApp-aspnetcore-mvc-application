@@ -1,5 +1,4 @@
 using eTicketApp.Data;
-using eTicketApp.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,9 +29,6 @@ namespace eTicketApp
             services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnectionString")
                 ));
-
-            //Services configurations
-            services.AddScoped<IActorsService, ActorsService>();
             services.AddControllersWithViews();
         }
 
