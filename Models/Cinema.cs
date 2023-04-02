@@ -10,13 +10,10 @@ namespace eTicketApp.Models
     {
         [Key]
         public int Id { get; set; }
-
-        [Display(Name ="Logo")]
+        [Display(Name = "Logo")]
         public string CinemaLogo { get; set; }
-
         [Display(Name = "Name")]
         public string CinemaName { get; set; }
-
         [Display(Name = "Description")]
         public string Description { get; set; }
         //Relationship
