@@ -9,18 +9,18 @@ namespace eTicketApp.Data.Services
     public interface IActorsService
     {
         //get all actors->Ienum
-        Task <IEnumerable<Actor>> GetAll();
+        Task <IEnumerable<Actor>> GetAllAsync();
 
         //return single actor
-        Actor GetById(int id);
+        Task<Actor> GetByIdAsync(int id);
 
         //Adding an actor
-        void Add(Actor actor);
+        Task AddAsync(Actor actor);
         
         //Update actor
-        Actor Update(int id, Actor newActor);
+        Task<Actor> UpdateAsync(int id, Actor newActor);
 
         //Delete Actor
-        void Delete(int id);
+        Task DeleteAsync(int id);
     }
 }
